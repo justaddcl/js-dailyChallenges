@@ -2,9 +2,9 @@
   "name": "jsDailyChallenge",
   "private": true,
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "stringIncrementer/test.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +17,9 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.2",
     "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "nodemon": "^2.0.4"
   }
 }
