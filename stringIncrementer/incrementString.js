@@ -1,20 +1,12 @@
-const split = str => {
-  if (str === '') return ['', 0];
-  return [str.match(/[a-zA-Z]+/g), str.match(/[\d]+/g)];
-};
-
 const incrementString = str => {
-  const [alphas, numbersStr] = split(str);
-
-  const number = numbersStr ? parseInt(numbersStr, 10) + 1 : '';
-
-  const zeros =
-    numbersStr &&
-    numbersStr[0] &&
-    numbersStr[0].length - number.toString().length >= 1
-      ? '0'.repeat(numbersStr[0].length - number.toString().length)
-      : '';
-  return (alphas || '') + (numbersStr ? zeros + number : '1');
+  if (isNaN(str[str.length - 1])) return `${str}1`;
+  return str.replace(/(0*)([0-9]+$)/g, (match, zero, number) => {
+    const incrementedNumber = parseInt(number, 10) + 1;
+    return (
+      zero.slice(incrementedNumber.toString().length - number.length) +
+      incrementedNumber
+    );
+  });
 };
 
 module.exports = incrementString;
