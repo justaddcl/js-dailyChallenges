@@ -2,7 +2,7 @@
   "name": "jsDailyChallenge",
   "private": true,
   "version": "1.0.0",
-  "main": "stringIncrementer/test.js",
+  "main": "newCashier/test.js",
   "scripts": {
     "test": "nodemon"
   },
