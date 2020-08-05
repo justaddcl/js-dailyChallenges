@@ -34,3 +34,5 @@ The menu items are fairly simple, there is no overlap in the names of the items:
 7. Milkshake
 8. Coke
 ```
+
+[Challenge by @jackdcasey on CodeWars](https://www.codewars.com/kata/5d23d89906f92a00267bb83d)
