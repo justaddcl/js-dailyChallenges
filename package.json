@@ -2,7 +2,7 @@
   "name": "jsDailyChallenge",
   "private": true,
   "version": "1.0.0",
-  "main": "newCashier/test.js",
+  "main": "ternaryLogic/test.js",
   "scripts": {
     "test": "nodemon"
   },
